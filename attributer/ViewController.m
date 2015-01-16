@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "MLCTextStatsViewController.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *headline;
@@ -22,6 +23,16 @@
     NSMutableAttributedString *title = [[NSMutableAttributedString alloc] initWithString:self.outlineButton.currentTitle];
     [title setAttributes:@{NSStrokeWidthAttributeName: @3} range:NSMakeRange(0, title.length)];
     [self.outlineButton setAttributedTitle:title forState:UIControlStateNormal];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([segue.identifier isEqualToString:@"stats_controller"]) {
+        if ([segue.destinationViewController isKindOfClass:[MLCTextStatsViewController class]]) {
+            MLCTextStatsViewController *stats = (MLCTextStatsViewController*)segue.destinationViewController;
+            stats.textToAnalyze = self.body.textStorage;
+        }
+
+    }
 }
 
 - (void)viewWillAppear:(BOOL)animated{

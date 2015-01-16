@@ -14,6 +14,7 @@
 		5B429DFA1A675BDE00716171 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B429DF91A675BDE00716171 /* Images.xcassets */; };
 		5B429DFD1A675BDE00716171 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B429DFB1A675BDE00716171 /* LaunchScreen.xib */; };
 		5B429E091A675BDE00716171 /* attributerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B429E081A675BDE00716171 /* attributerTests.m */; };
+		5B429E171A681D7C00716171 /* MLCTextStatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B429E161A681D7C00716171 /* MLCTextStatsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		5B429E021A675BDE00716171 /* attributerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = attributerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B429E071A675BDE00716171 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B429E081A675BDE00716171 /* attributerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = attributerTests.m; sourceTree = "<group>"; };
+		5B429E151A681D7C00716171 /* MLCTextStatsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLCTextStatsViewController.h; sourceTree = "<group>"; };
+		5B429E161A681D7C00716171 /* MLCTextStatsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLCTextStatsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,8 @@
 			children = (
 				5B429DF31A675BDE00716171 /* ViewController.h */,
 				5B429DF41A675BDE00716171 /* ViewController.m */,
+				5B429E151A681D7C00716171 /* MLCTextStatsViewController.h */,
+				5B429E161A681D7C00716171 /* MLCTextStatsViewController.m */,
 				5B429DF61A675BDE00716171 /* Main.storyboard */,
 				5B429DF91A675BDE00716171 /* Images.xcassets */,
 				5B429DFB1A675BDE00716171 /* LaunchScreen.xib */,
@@ -221,6 +226,7 @@
 			files = (
 				5B429DF51A675BDE00716171 /* ViewController.m in Sources */,
 				5B429DF21A675BDE00716171 /* AppDelegate.m in Sources */,
+				5B429E171A681D7C00716171 /* MLCTextStatsViewController.m in Sources */,
 				5B429DEF1A675BDE00716171 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
